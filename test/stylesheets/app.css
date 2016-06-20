@@ -1,0 +1,161 @@
+/*	Variables	*/
+/*	Base   */
+/* line 1, ../sass/base/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 3, ../sass/base.scss */
+/* line 3, ../sass/base/_base.scss */
+html {
+  font-family: monospace,arial;
+}
+
+/* line 6, ../sass/base/_base.scss */
+h4 {
+  text-transform: uppercase;
+}
+
+/* line 9, ../sass/base/_base.scss */
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 12, ../sass/base/_base.scss */
+body {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 175%;
+}
+
+/* line 19, ../sass/base/_base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 23, ../sass/base/_base.scss */
+li {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 27, ../sass/base/_base.scss */
+.cb {
+  clear: both;
+}
+
+/* line 28, ../sass/base/_base.scss */
+img {
+  float: none !important;
+  border: 0px;
+}
+
+/*	Layout	*/
+/* line 1, ../sass/layout/_grid.scss */
+.l-content {
+  display: block;
+  position: relative;
+  margin-left: -5%;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+}
+
+/*	Module	*/
+/*			HEADER			*/
+/* line 3, ../sass/module/_header.scss */
+.header {
+  height: 450px;
+  background: url(../images/background.jpg) center top fixed;
+  background-repeat: repeat-x;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/*			MENU		*/
+/* line 12, ../sass/module/_header.scss */
+.menu {
+  float: right;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+/* line 21, ../sass/module/_header.scss */
+.menu-item {
+  padding: 0 20px 0 20px;
+}
+/* line 23, ../sass/module/_header.scss */
+.menu-item:hover, .menu-item.is-active {
+  color: #000;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  /* line 26, ../sass/module/_header.scss */
+  .menu {
+    text-align: center;
+  }
+}
+/*
+@import "icon/*.png";
+$icon-layout: smart;
+@include all-icon-sprites(true);
+*/
+/* line 6, ../sass/module/_icon.scss */
+i.fa {
+  font-size: 40px;
+  border: 4px solid #FCAC45;
+  width: 100px;
+  height: 100px;
+  padding: 27px 25px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+/* line 15, ../sass/module/_icon.scss */
+i.fa:hover {
+  color: #FFF;
+  background-color: #FCAC45;
+}
+
+/* line 1, ../sass/module/_section.scss */
+.section {
+  text-align: center;
+  padding: 45px 90px;
+}
+
+/* line 1, ../sass/module/_footer.scss */
+.footer {
+  display: block;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+/* line 8, ../sass/module/_footer.scss */
+.footer-content {
+  position: absolute;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* line 14, ../sass/module/_footer.scss */
+.footer-text {
+  padding-top: 16px;
+  margin: auto;
+}
+
+/**/

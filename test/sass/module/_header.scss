@@ -1,0 +1,29 @@
+/*			HEADER			*/
+
+.header {
+  height: 450px;
+  background: url(../images/background.jpg) center top fixed;
+  background-repeat: repeat-x;
+  @include background-size(cover);
+}
+
+/*			MENU		*/
+
+.menu{
+
+	float: right;
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 600;
+	margin-top: 14px
+}
+
+.menu-item{
+	padding: 0 20px 0 20px;
+	&:hover, &.is-active{color: #000; text-decoration: underline;}
+}
+@media (max-width: 768px) {
+  .menu {
+    text-align: center;
+  }
+}
